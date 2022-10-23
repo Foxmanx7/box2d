@@ -381,7 +381,7 @@ void b2DistanceJoint::Dump()
 	b2Dump("  jd.maxLength = %.9g;\n", m_maxLength);
 	b2Dump("  jd.stiffness = %.9g;\n", m_stiffness);
 	b2Dump("  jd.damping = %.9g;\n", m_damping);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }
 
 void b2DistanceJoint::Draw(b2Draw* draw) const

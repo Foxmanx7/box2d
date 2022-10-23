@@ -455,7 +455,7 @@ void b2RevoluteJoint::Dump()
 	b2Dump("  jd.enableMotor = bool(%d);\n", m_enableMotor);
 	b2Dump("  jd.motorSpeed = %.9g;\n", m_motorSpeed);
 	b2Dump("  jd.maxMotorTorque = %.9g;\n", m_maxMotorTorque);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }
 
 ///

@@ -1267,7 +1267,7 @@ void b2World::Dump()
 	b2OpenDump("box2d_dump.inl");
 
 	b2Dump("b2Vec2 g(%.9g, %.9g);\n", m_gravity.x, m_gravity.y);
-	b2Dump("m_world->SetGravity(g);\n");
+	b2Dump("m_worldChunk->SetGravity(g);\n");
 
 	b2Dump("b2Body** bodies = (b2Body**)b2Alloc(%d * sizeof(b2Body*));\n", m_bodyCount);
 	b2Dump("b2Joint** joints = (b2Joint**)b2Alloc(%d * sizeof(b2Joint*));\n", m_jointCount);

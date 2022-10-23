@@ -75,7 +75,7 @@ public:
 	{
 		Test::Step(settings);
 
-		//b2DynamicTree* tree = &m_world->m_contactManager.m_broadPhase.m_tree;
+		//b2DynamicTree* tree = &m_worldChunk->m_contactManager.m_broadPhase.m_tree;
 
 		//if (m_stepCount == 400)
 		//{

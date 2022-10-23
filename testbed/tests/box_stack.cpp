@@ -135,7 +135,7 @@ public:
 		//{
 		//	if (m_bullet != NULL)
 		//	{
-		//		m_world->DestroyBody(m_bullet);
+		//		m_worldChunk->DestroyBody(m_bullet);
 		//		m_bullet = NULL;
 		//	}
 
@@ -153,7 +153,7 @@ public:
 		//		bd.bullet = true;
 		//		bd.position.Set(-31.0f, 5.0f);
 
-		//		m_bullet = m_world->CreateBody(&bd);
+		//		m_bullet = m_worldChunk->CreateBody(&bd);
 		//		m_bullet->CreateFixture(&fd);
 
 		//		m_bullet->SetLinearVelocity(b2Vec2(400.0f, 0.0f));

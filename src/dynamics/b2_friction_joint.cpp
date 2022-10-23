@@ -251,5 +251,5 @@ void b2FrictionJoint::Dump()
 	b2Dump("  jd.localAnchorB.Set(%.9g, %.9g);\n", m_localAnchorB.x, m_localAnchorB.y);
 	b2Dump("  jd.maxForce = %.9g;\n", m_maxForce);
 	b2Dump("  jd.maxTorque = %.9g;\n", m_maxTorque);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }

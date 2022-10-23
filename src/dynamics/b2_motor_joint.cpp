@@ -307,5 +307,5 @@ void b2MotorJoint::Dump()
 	b2Dump("  jd.maxForce = %.9g;\n", m_maxForce);
 	b2Dump("  jd.maxTorque = %.9g;\n", m_maxTorque);
 	b2Dump("  jd.correctionFactor = %.9g;\n", m_correctionFactor);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }

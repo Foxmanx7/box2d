@@ -1390,7 +1390,7 @@ while (i < nukeCount)
         ++i;
     }
 
-    m_world->DestroyBody(b);
+    m_worldChunk->DestroyBody(b);
 }
 ```
 

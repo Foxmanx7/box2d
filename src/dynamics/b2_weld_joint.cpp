@@ -340,5 +340,5 @@ void b2WeldJoint::Dump()
 	b2Dump("  jd.referenceAngle = %.9g;\n", m_referenceAngle);
 	b2Dump("  jd.stiffness = %.9g;\n", m_stiffness);
 	b2Dump("  jd.damping = %.9g;\n", m_damping);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }

@@ -558,7 +558,7 @@ void b2Body::Dump()
 	b2Dump("  bd.bullet = bool(%d);\n", m_flags & e_bulletFlag);
 	b2Dump("  bd.enabled = bool(%d);\n", m_flags & e_enabledFlag);
 	b2Dump("  bd.gravityScale = %.9g;\n", m_gravityScale);
-	b2Dump("  bodies[%d] = m_world->CreateBody(&bd);\n", m_islandIndex);
+	b2Dump("  bodies[%d] = m_worldChunk->CreateBody(&bd);\n", m_islandIndex);
 	b2Dump("\n");
 	for (b2Fixture* f = m_fixtureList; f; f = f->m_next)
 	{

@@ -342,7 +342,7 @@ void b2PulleyJoint::Dump()
 	b2Dump("  jd.lengthA = %.9g;\n", m_lengthA);
 	b2Dump("  jd.lengthB = %.9g;\n", m_lengthB);
 	b2Dump("  jd.ratio = %.9g;\n", m_ratio);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }
 
 void b2PulleyJoint::ShiftOrigin(const b2Vec2& newOrigin)

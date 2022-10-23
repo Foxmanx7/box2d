@@ -604,7 +604,7 @@ void b2PrismaticJoint::Dump()
 	b2Dump("  jd.enableMotor = bool(%d);\n", m_enableMotor);
 	b2Dump("  jd.motorSpeed = %.9g;\n", m_motorSpeed);
 	b2Dump("  jd.maxMotorForce = %.9g;\n", m_maxMotorForce);
-	b2Dump("  joints[%d] = m_world->CreateJoint(&jd);\n", m_index);
+	b2Dump("  joints[%d] = m_worldChunk->CreateJoint(&jd);\n", m_index);
 }
 
 void b2PrismaticJoint::Draw(b2Draw* draw) const

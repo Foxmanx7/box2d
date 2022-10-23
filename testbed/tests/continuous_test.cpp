@@ -66,7 +66,7 @@ public:
 			b2BodyDef bd;
 			bd.type = b2_dynamicBody;
 			bd.position.Set(0.0f, 2.0f);
-			b2Body* body = m_world->CreateBody(&bd);
+			b2Body* body = m_worldChunk->CreateBody(&bd);
 
 			b2CircleShape shape;
 			shape.m_p.SetZero();
@@ -75,7 +75,7 @@ public:
 
 			bd.bullet = true;
 			bd.position.Set(0.0f, 10.0f);
-			body = m_world->CreateBody(&bd);
+			body = m_worldChunk->CreateBody(&bd);
 			body->CreateFixture(&shape, 1.0f);
 			body->SetLinearVelocity(b2Vec2(0.0f, -100.0f));
 		}
